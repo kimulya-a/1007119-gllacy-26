@@ -19,12 +19,57 @@
                 </ul>
             </nav>
             <p>С 10 до 20, ежедневно <br> 8 812 450-25-25</p>
-            <a href="index.html">Главная</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="#">Сливочное</a>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Сливочное</a></li>
+            </ul>
             <h2>Сливочное мороженное</h2>
         </header>
         <main>
+            <section>
+                <form action="">
+                    <label for="sort">Сортировка:</label>
+                    <select name="sort" id="sort">
+                        <option value="popular">по популярности</option>
+                    </select>
+                    <!-- Не нашел как сделать два ползунка, возможно ли это сделать
+                    простым html? -->
+                    <label for="price">Цена: 100 руб. - 500 руб.</label>
+                    <input type="range" id="price" min="0" max="1000">
+                    <div>
+                        <p>Жирность:</p>
+                        <input type="radio" id="fat0" value="0" name="fat">
+                        <label for="fat0">0%</label>
+
+                        <input type="radio" id="fat10" value="10" name="fat" checked>
+                        <label for="fat10">до 10%</label>
+
+                        <input type="radio" id="fat30" value="30" name="fat">
+                        <label for="fat30">до 30%</label>
+
+                        <input type="radio" id="fat40" value="40" name="fat">
+                        <label for="fat40">выше 30%</label>
+                    </div>
+                    <div>
+                        <p>Наполнители:</p>
+                        <input type="checkbox" name="chocolate" value="chocolate" checked>
+                        <label for="chocolate">шоколадные</label>
+
+                        <input type="checkbox" name="sugar" value="sugar" checked>
+                        <label for="sugar">сахарные присыпки</label>
+
+                        <input type="checkbox" name="fruit" value="fruit">
+                        <label for="fruit">фрукты</label>
+
+                        <input type="checkbox" name="sirup" value="sirup">
+                        <label for="sirup">сиропы</label>
+
+                        <input type="checkbox" name="jam" value="jam">
+                        <label for="jam">джемы</label>
+                    </div>
+                </form>
+            </section>
             <section>
                 <ul>
                     <li>
@@ -87,6 +132,18 @@
                         <p>420 ₽/кг</p>
                         <p>Сливочное с мятным сиропом</p>
                     </li>
+                </ul>
+            </section>
+            <!--тут я тоже не совсем понимаю как это првильно сделать-->
+            <section>
+                <ul>
+                    <li><a href="#">&lt;</a></li>
+                    <li><a href="#"></a>1</li>
+                    <li><a href="#"></a>2</li>
+                    <li><a href="#"></a>3</li>
+                    <li><a href="#"></a>4</li>
+                    <li><a href="#"></a>5</li>
+                    <li><a href="#">&gt;</a></li>
                 </ul>
             </section>
         </main>
