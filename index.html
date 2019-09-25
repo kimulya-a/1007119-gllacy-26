@@ -7,7 +7,7 @@
   <body>
 
     <header>
-      <img src="#" alt="Logo">
+      <img src="img/logo.svg" alt="Gllacy Logo" width="154" height="64">
       <nav>
         <ul>
           <li><a href="catalog.html">Каталог</a></li>
@@ -15,8 +15,19 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul>
-          <li><button type="button">Вход</button></li>
-          <li><button type="button">Корзина</button></li>
+          <!--
+           Вопрос насчет поиска, его надо сейчас делать или потом и если сейчас, то как его лучше сделать?
+           И насчет иконок для входа и корзины их так вставлять или тоже потом псевдоэлементом?
+           И вообще когда лучше использовать псевдоэлемент, а когда вставлять свг в html? 
+          -->
+          <li>
+            <img src="img/entrance.svg" width="21" height="19" alt="entrance">
+            <button type="button">Вход</button>
+          </li>
+          <li>
+            <img src="img/basket.svg" width="21" height="20" alt="basket">
+            <button type="button">Корзина</button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -81,11 +92,13 @@
         </h2>
         <ul>
           <li>
+            <img src="img/ice-cream.svg" alt="icecream">
             Все наше мороженое изготавливается на собственном 
             производстве, с использованием современного 
             оборудования и проверенных временем технологий.
           </li>
           <li>
+            <img src="img/eco.svg" alt="eco">
             Для приготовления мороженого используются настоящие 
             сливки и молоко высочайшего качества. 
             Все дополнительные ингредиенты и добавки произведены 
@@ -94,12 +107,14 @@
         </ul>
         <ul>
           <li>
+            <img src="img/cow.svg" alt="cow">
             Закупка ингредиентов  производится только у 
             проверенных фермерских хозяйств и компаний, 
             с которыми нас связывает долговременное 
             сотрудничество.
           </li>
           <li>
+            <img src="img/thermometer.svg" alt="thermometer">
             Доставка нашего мороженого до заказчиков 
             осуществляется в специальном термопаке, 
             который не дает мороженому растаять в пути 
@@ -125,7 +140,7 @@
       </article>
 
       <section>
-        <img src="#" alt="Map">
+        <img src="img/Layer_3.png" width="1200px" height="430px" alt="Map">
         <div>
           <p>
             Адрес главного офиса<br> и офлайн-магазина: <br>
@@ -142,21 +157,27 @@
 
     <footer>
       <ul>
-        <a href="#">Твиттер</a>
-        <a href="#">Инстаграм</a>
-        <a href="#">Фейсбук</a>
-        <a href="#">ВКонтакте</a>
+        <li><a href="#">Твиттер</a></li>
+        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#">Фейсбук</a></li>
+        <li><a href="#">ВКонтакте</a></li>
       </ul>
       <ul>
-        <a href="#">Для поставщиков</a>
-        <a href="#">Наши документы</a>
-        <a href="#">О производстве</a>
-        <a href="#">Экологические стандарты</a>
+        <li>
+          <img src="img/heart.svg" alt="heart">
+          <a href="#">Для поставщиков</a>
+        </li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
       </ul>
+      <div>
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="htmlacademy logo">
       <p>
         Сделано в 
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
+      </div>
     </footer>
   </body>
 </html>
