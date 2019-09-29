@@ -10,18 +10,60 @@
       <img src="img/logo.svg" alt="Gllacy Logo" width="154" height="64">
       <nav>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a href="catalog.html" aria-label="Каталог товаров">Каталог</a>
+            <ul class="visually-hidden">
+              <li><a href="#" aria-label="Новинки"><strong>Новинки</strong></a></li>
+              <hr>
+              <li><a href="catalog.html" aria-label="Сливочное мороженное">Сливочное</a></li>
+              <li><a href="#" aria-label="Щербеты">Щербеты</a></li>
+              <li><a href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
+              <li><a href="#" aria-label="Мелорин">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul>
           <li>
+            <img src="img/loupe.svg" alt="search">
+            <button type="button" class="visually-hidden">Поиск</button>
+            <ul class="visually-hidden">
+              <li>
+                <form method="POST">
+                  <label class="visually-hidden">
+                    Окно поиска
+                    <input type="text" name="search" placeholder="Что ищем?">
+                  </label>
+                  <button type="submit">Найти</button>
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li>
             <img src="img/entrance.svg" width="21" height="19" alt="entrance">
-            <button type="button">Вход</button>
+            <a href="#" aria-label="Вход">Вход</a>
+            <ul class="visually-hidden">
+              <li>
+                <form method="POST">
+                  <label class="visually-hidden">
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    Электронная почта
+                  </label> <br>
+                  <label class="visually-hidden">
+                    <input type="password" name="password" placeholder="Пароль">
+                    Пароль
+                  </label> <br>
+                  <button type="submit">Войти</button>
+                  <a href="#" aria-label="Забыли пароль?">Забыли пароль?</a>
+                  <a href="#" aria-label="Регистрация">Новая регистрация</a>
+                </form>
+              </li>
+            </ul>
           </li>
           <li>
             <img src="img/basket.svg" width="21" height="20" alt="basket">
-            <button type="button">Корзина</button>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -174,5 +216,22 @@
       </p>
       </div>
     </footer>
+
+    <div class="visually-hidden">
+      <p>Мы обязательно вам ответим!</p>
+      <button type="button" aria-label="Закрыть">X</button>
+      <form method="POST">
+        <label class="visually-hidden">
+          Ваше имя:
+          <input type="text" name="name" placeholder="Как вас зовут?">
+        </label> <br>
+        <label class="visually-hidden">
+          Почта:
+          <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        </label> <br>
+        <textarea name="comment" cols="30" rows="20">Напишите что-нибудь...</textarea> <br>
+        <button type="button">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
